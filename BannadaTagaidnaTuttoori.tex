@@ -6,7 +6,8 @@
 \usepackage{poemscol}
 \usepackage{graphicx}
 \usepackage{geometry}
-\setmainfont[Script=Kannada,Path=./]{Benne-Regular.otf}
+\usepackage{eso-pic}
+\setmainfont[Script=Kannada,Path=./]{lohit.ttf}
 % Redefine \poemlines to set line numbers to zero
 % Define custom page numbering
 \pagestyle{fancy}
@@ -16,32 +17,37 @@
 \renewcommand{\headrulewidth}{0pt} % Remove header line
 \begin{document}
 {\Huge ಬಣ್ಣದ ತಗಡಿನ ತುತ್ತೂರಿ}
-\Large
+\large
 \begin{poem}
+  \raggedleft
   \begin{stanza}
    ಬಣ್ಣದ ತಗಡಿನ ತುತ್ತೂರಿ \verseline
    ಕಾಸಿಗೆ ಕೊಂಡನು ಕಸ್ತೂರಿ \verseline
    ಸರಿಗಮ ಪದನಿಸ ಊದಿದನು \verseline
    ಸನಿದಪ ಮಗರಿಸ ಊದಿದನು
   \end{stanza}
+  \raggedleft
   \begin{stanza}
     ತನಗೇ ತುತ್ತೂರಿ ಇದೆ ಎಂದು \verseline
     ಬೇರಾರಿಗೂ ಅದು ಇಲ್ಲೆಂದ \verseline
     ಕಸ್ತೂರಿ ನಡೆದನು ಬೀದಿಯಲಿ \verseline
     ಜಂಭದ ಕೋಳಿಯ ರೀತಿಯಲಿ
   \end{stanza}
+  \raggedleft
   \begin{stanza}
     ತುತ್ತೂರಿ ಊದುತ ಕೊಳದ ಬಳಿ \verseline
     ನಡೆದನು ಕಸ್ತೂರಿ ಸಂಜೆಯಲಿ \verseline
     ಜಾರಿತು ನೀರಿಗೆ ತುತ್ತೂರಿ \verseline
     ಗಂಟಲು ಕಟ್ಟಿತು ನೀರೂರಿ
   \end{stanza}
+  \raggedleft
   \begin{stanza}
     ಸರಿಗಮ ಊದಲು ನೋಡಿದನು \verseline
     ಗಗಗಗ ಸದ್ದನು ಮಾಡಿದನು \verseline
     ಬಣ್ಣವು ನೀರಿನ ಪಾಲಾಯ್ತು \verseline
     ಬಣ್ಣದ ತುತ್ತೂರಿ ಬೋಳಾಯ್ತು
   \end{stanza}
+  \raggedleft
   \begin{stanza}
     ತುತ್ತೂರಿ ಬಣ್ಣವು ಹಾಳಾಯ್ತು \verseline
     ಜಂಭದ ಕೋಳಿಗೆ ಗೋಳಾಯ್ತು
@@ -49,4 +55,8 @@
 \end{poem}
 \raggedleft
 ಜಿ ಪಿ ರಾಜರತ್ನಂ
+% Add the image as an overlay
+\AddToShipoutPicture*{
+  \put(00,200){\includegraphics[width=6.5cm]{boy.png}} % Adjust the coordinates and size as needed
+}
 \end{document}
