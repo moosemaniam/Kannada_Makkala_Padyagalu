@@ -1,0 +1,29 @@
+%% @file main.tex
+%% @Description Main document tex file
+%% @author Vikas MK
+%% @version 1.0
+%% @date 2023-09-23
+
+\documentclass[a5paper]{article}
+\usepackage{fancyhdr}
+\usepackage{lmodern}
+\usepackage{fontspec}
+\usepackage{polyglossia}
+\usepackage{poemscol}
+\usepackage{graphicx}
+\usepackage{geometry}
+\usepackage{eso-pic}
+\usepackage{hyperref}%% This package allows for hyperlinks inside a document.  Use the command
+\usepackage{subfiles}
+%% New command to switch to English in between
+%%\newcommand{\make_en}[1]{{\english #1}}%% Courtesy of https://aravindavk.in/blog/kannada-in-latex/
+\hypersetup{} %%to control different link colors.
+\setmainfont[Script=Kannada,Path=./]{lohit.ttf}
+\title{ಕನ್ನಡ ಮಕ್ಕಳ ಪದ್ಯಗಳು }
+\begin{document}
+\maketitle
+%\newpage
+%\subfile{intro}
+\newpage
+\subfile{page1-Bannada-tagadina-tuttoori}
+\end{document}

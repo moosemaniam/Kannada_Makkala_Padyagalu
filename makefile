@@ -1,2 +1,2 @@
 all:
-	xelatex BannadaTagaidnaTuttoori.tex
+	xelatex main.tex
